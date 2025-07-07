@@ -1,0 +1,115 @@
+/* Whether.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .app-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .card {
+    background: #1e1e1e;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #03dac6;
+  }
+  
+  .form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 0.7rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    transition: background-color 0.3s;
+  }
+  
+  input[type="text"]:focus {
+    background-color: #333;
+  }
+  
+  button {
+    padding: 0.7rem 1.2rem;
+    background-color: #03dac6;
+    color: #121212;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #00c4a7;
+    transform: scale(1.05);
+  }
+  
+  .weather-card {
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    padding: 1rem;
+    margin-top: 1rem;
+    box-shadow: 0 5px 15px rgba(3, 218, 198, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .weather-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .weather-card h2 {
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  .temp {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    color: #03dac6;
+  }
+  
+  .details p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+  }
+  
+  .error {
+    margin-top: 1rem;
+    color: #ff6b6b;
+    font-weight: bold;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  
