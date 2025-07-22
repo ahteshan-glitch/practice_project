@@ -74,7 +74,7 @@ function Whether() {
   return (
     <div className={`app-container ${whether.condition?.toLowerCase()}`}>
       <div className="card">
-        <h1 className="title">🌙 Weather App</h1>
+        <h1 className="title">🌙 Wyndly</h1>
         <form onSubmit={handleSubmit} className="form">
           <input
             value={city}
